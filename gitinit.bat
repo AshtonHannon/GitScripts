@@ -1,4 +1,5 @@
 @ECHO off
+ECHO Available commands: init, clone
 :start
 SET /p input_command="> "
 IF "%input_command%"=="init" (GOTO init
