@@ -18,3 +18,4 @@ Includes eight commands: 'add', 'commit', 'push', 'reset', 'default', 'clear', '
 - `default`: Will prompt for commit message. The quick solution to add, commit, and push as it will add all files, commit with the inputted commit message, and push to the repository all in one command.
 - `clear`: Clears the terminal
 - `exit`: Exits the program
+- `help`: Prints out the available commands
