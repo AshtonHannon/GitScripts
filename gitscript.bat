@@ -1,5 +1,5 @@
 @ECHO off
-ECHO Available commands: add, commit, push, rerun, reset, default, clear, exit
+ECHO Available commands: add, commit, push, rerun, reset, default, clear, exit, help
 :start
 SET /p input_command="> "
 IF "%input_command%"=="add" (GOTO add
@@ -9,7 +9,13 @@ IF "%input_command%"=="add" (GOTO add
 ) ELSE IF "%input_command%"=="reset" (GOTO reset
 ) ELSE IF "%input_command%"=="default" (GOTO default
 ) ELSE IF "%input_command%"=="clear" (GOTO clear
-) ELSE IF "%input_command%"=="exit" (GOTO exit)
+) ELSE IF "%input_command%"=="exit" (GOTO exit
+) ELSE IF "%input_command%"=="help" (GOTO help)
+GOTO start
+
+
+:help
+ECHO Available commands: add, commit, push, rerun, reset, default, clear, exit, help
 GOTO start
 
 
