@@ -1,5 +1,12 @@
 @ECHO off
 ECHO Available commands: add, commit, push, rerun, reset, default, clear, exit, help
+:branch
+SET /p selected_branch="What branch should this be on: "
+git.exe checkout %selected_branch%
+git.exe push --set-upstream origin %selected_branch%
+GOTO start
+
+
 :start
 SET /p input_command="> "
 IF "%input_command%"=="add" (GOTO add
